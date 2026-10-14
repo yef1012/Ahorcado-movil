@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "El Ahorcado Móvil",
+    "slug": "Ahorcado",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/branding/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.yefry.ahorcadomovil",
+      "versionCode": 1,
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#F7FCF8",
+        "foregroundImage": "./assets/branding/adaptive-foreground.png",
+        "monochromeImage": "./assets/branding/adaptive-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": false,
+          "enableBackgroundRecording": false
+        }
+      ],
+      "expo-system-ui",
+      "expo-asset",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/branding/splash.png",
+          "imageWidth": 160,
+          "resizeMode": "contain",
+          "backgroundColor": "#F7FCF8",
+          "dark": {
+            "image": "./assets/branding/splash.png",
+            "backgroundColor": "#0E1B15"
+          }
+        }
+      ]
+    ]
+  }
+}
