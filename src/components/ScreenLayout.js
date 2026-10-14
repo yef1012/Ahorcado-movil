@@ -2,6 +2,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import useAppTheme from '../hooks/useAppTheme';
+import CreditosFooter from './CreditosFooter';
 import StorageNotice from './StorageNotice';
 
 /** @param {{children: import('react').ReactNode, contentStyle?: import('react-native').StyleProp<import('react-native').ViewStyle>, backgroundColors?: import('expo-linear-gradient').LinearGradientProps['colors']}} props */
@@ -18,6 +19,8 @@ export default function ScreenLayout({ children, contentStyle, backgroundColors 
             <StorageNotice />
             {children}
           </View>
+          {/* Sigue al contenido para no cubrir botones ni el teclado del juego. */}
+          <CreditosFooter />
         </ScrollView>
       </SafeAreaView>
     </LinearGradient>
