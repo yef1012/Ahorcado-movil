@@ -1,0 +1,69 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# Configuración local y secretos (solo una plantilla sin valores reales puede subirse)
+.env
+.env.*
+!.env.example
+credentials.json
+*.keystore
+service-account*.json
+google-service-account*.json
+
+# Compilaciones, registros y archivos temporales
+*.apk
+*.aab
+*.ipa
+*.log
+*.tmp
+/builds/
+/coverage/
+/.tmp/
+/tmp/
+/.eas/
+.idea/
+Thumbs.db
+
+# Configuración privada de herramientas
+.aws/
+.codex/
+.agents/
+
+# Copia comprimida redundante; se conserva la referencia expandida en docs
+/docs/diseno/Ahorcado_Figma_9_Capturas_y_Codigo_para_Codex.zip
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
