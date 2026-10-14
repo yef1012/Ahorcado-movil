@@ -22,7 +22,10 @@
         "backgroundColor": "#F7FCF8",
         "foregroundImage": "./assets/branding/adaptive-foreground.png",
         "monochromeImage": "./assets/branding/adaptive-monochrome.png"
-      }
+      },
+      "permissions": [
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -53,6 +56,11 @@
           }
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "230b7027-b9e8-4596-a042-dce42dd7b8d2"
+      }
+    }
   }
 }
